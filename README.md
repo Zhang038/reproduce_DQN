@@ -19,7 +19,7 @@ It will create a new evnvironment named `dqn_env_py36`. To activate the new envi
 conda activate dqn_env_py36 
 ```
 
-##Run
+## Run
 
 ```
 cd code_deepQueueNet
