@@ -10,7 +10,7 @@ Network simulators are essential tools for network operators, and can assist imp
 
 ## Install
 ---
-First of all, please make sure that you have at least 1 GPU on hand (16GB memory is required to run the device model). To install the right dependencies, run the following to create an environment from the `env.yml` file:
+First of all, please make sure that you have at least 1 GPU on hand (16GB memory is required to run the device model). To install the right dependencies, run the following to create an environment from the `environment.yml` file:
 ```python
 conda env create -f environment.yml
 ```
