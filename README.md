@@ -12,12 +12,20 @@ Network simulators are essential tools for network operators, and can assist imp
 ---
 First of all, please make sure that you have at least 1 GPU on hand (16GB memory is required to run the device model). To install the right dependencies, run the following to create an environment from the `env.yml` file:
 ```python
-conda env create -f env.yml
+conda env create -f environment.yml
 ```
 It will create a new evnvironment named `dqn_env_py36`. To activate the new environment: 
 ```python
 conda activate dqn_env_py36 
 ```
+
+##Run
+
+```
+cd code_deepQueueNet
+python3 main.py --gpu=1
+```
+
 ## References
 
 - [1] [DQN source code](https://github.com/HUAWEI-Theory-Lab/deepqueuenet)
