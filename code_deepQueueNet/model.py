@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from code_deepQueueNet.attention import SelfAttention
+from attention import SelfAttention
 
 
 class DeepQueueNet(nn.Module):
