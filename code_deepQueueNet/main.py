@@ -41,7 +41,11 @@ if __name__ == "__main__":
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     config = BaseConfig()
     torch.manual_seed(config.seed)
-    if params['mode']==1: #
+    if not os.path.exists(params['save_dir']):
+        os.mkdir(params['save_dir'])
+    if not os.path.exists("../logs"):
+        os.mkdir("../logs")
+    if params['mode']==1: #intial training
         train_file = params['train_file']
         test1_file = params['test1_file']
         test2_file = params['test2_file']
