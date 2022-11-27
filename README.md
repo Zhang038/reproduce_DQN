@@ -1,8 +1,9 @@
-# Reproduce the DL model with pytorch for DeepQueueNet: Towards Scalable and Generalized Network Performance Estimation with Packet-level Visibility
+# Reproduce DeepQueueNet: Towards Scalable and Generalized Network Performance Estimation with Packet-level Visibility
 ---
 
 Demo paper in ACM SIGCOMM 2022
-
+#### Authors
+Yang, Qingqing, Xi Peng, Li Chen, Libin Liu, Jingze Zhang, Hong Xu, Baochun Li, and Gong Zhang
 
 #### Abstract 
 ---
