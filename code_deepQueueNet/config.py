@@ -1,3 +1,4 @@
+from unicodedata import bidirectional
 import pandas as pd
 import numpy as np
 
@@ -7,7 +8,7 @@ class BaseConfig:
     test_size=0.2 #train_test_split ratio
     sub_rt=0.005  #subsampling for Eval.
     TIME_STEPS=42
-    BATCH_SIZE=32*32*8
+    BATCH_SIZE=32*16*16
     modelname='4-port switch/FIFO'
     no_of_port=4
     no_of_buffer=1
@@ -16,7 +17,7 @@ class BaseConfig:
     seed=0
     window=63   #window size to cal. average service time.
     no_process=15 #multi-processing:no of processes used. 
-    epochs=6
+    epochs=100
     n_outputs=1 
     learning_rate=0.001
     l2=0.1
@@ -25,6 +26,7 @@ class BaseConfig:
     mul_head=3
     mul_head_output_nodes=32
     lstm=1
+    bidirectional=1
     
     
     

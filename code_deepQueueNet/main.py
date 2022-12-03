@@ -73,9 +73,9 @@ if __name__ == "__main__":
         optimizer = torch.optim.Adam(model.parameters(), lr=params['lr'],weight_decay=config.l2)
         best_loss = float("inf")
 
-        train_log = "../logs/train_10epochs_l2.log"
-        test1_log = "../logs/test1_10epochs_l2.log"
-        test2_log = "../logs/test2_10epochs_l2.log"
+        train_log = "../logs/train_100epochs_l2_bilstm.log"
+        test1_log = "../logs/test1_100epochs_l2_bilstm.log"
+        test2_log = "../logs/test2_100epochs_l2_bilstm.log"
         for epoch in range(1,epochs+1):
             train_loss = train_DQN(train_loader,device,model,loss_fn,optimizer,epoch,train_log)
             test1_loss = val_DQN(test_loader_1,device,model,loss_fn,epoch, test1_log)
