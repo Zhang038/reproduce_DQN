@@ -39,9 +39,11 @@ DeepQueueNet[2] is such an end to end network simulator developped by deep learn
 ---
 ![](https://github.com/Zhang038/reproduce_DQN/blob/main/figures/ablation.png)
 
+####Conclusion
+1. We successfully complete the reproduction of DeepQueueNet and validate the correctness of our work.
+2. The ablation study we have conducted demonstrates that although transformer is already in the model to encode sequential information, BiLSTM also plays a fundamental role to catch time serial features about incoming packets.
 
 #### References
-
 - [1] [DQN source code](https://github.com/HUAWEI-Theory-Lab/deepqueuenet)
 - [2] [Yang, Qingqing, Xi Peng, Li Chen, Libin Liu, Jingze Zhang, Hong Xu, Baochun Li, and Gong Zhang. "DeepQueueNet: towards scalable and generalized network performance estimation with packet-level visibility." In Proceedings of the ACM SIGCOMM 2022 Conference, pp. 441-457. 2022.](https://dl.acm.org/doi/abs/10.1145/3544216.3544248?casa_token=zRdKq6SH8NsAAAAA:it5hfhcuWwnWy5NiaWuUnmmRh_K9gM2UHWsjvvRrJQehZlo8JUqC2BGCF1wlllJAXA7WpJquW2mIiA)
   
